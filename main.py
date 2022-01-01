@@ -3,7 +3,6 @@ import pandas as pd
 import plotly.express as px
 import numpy as np 
 import plotly.figure_factory as ff
-import openpyxl
 
 header = st.container()
 total_users = st.container()
