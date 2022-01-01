@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 import numpy as np 
 import plotly.figure_factory as ff
+import openpyxl
 
 header = st.container()
 total_users = st.container()
@@ -34,7 +35,8 @@ with total_users:
 	#creates the bar graph 
 	mau_bar = px.bar(df, title = 'test title', x = 'MONTHS', y = 'MONTHLY_ACTIVE_USERS')
 
-	st.plotly_chart(mau_bar)
+	#st.plotly_chart(mau_bar)
+	mau_bar.show()
 
 	#inserting DAU data 
 	df = pd.read_excel('dau_anchor.xlsx', sheet_name = 'Sheet 1', usecols = 'A:B',
