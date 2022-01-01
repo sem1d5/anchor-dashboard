@@ -10,7 +10,7 @@ daily_activity = st.container()
 ust_wallet = st.container()
 
 with header:
-	st.title('Premium Anchor Dashboard')
+	st.title('Extended Anchor Dashboard')
 	st.text('example text')
 
 with total_users:
