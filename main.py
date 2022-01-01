@@ -34,8 +34,8 @@ with total_users:
 	#creates the bar graph 
 	mau_bar = px.bar(df, title = 'test title', x = 'MONTHS', y = 'MONTHLY_ACTIVE_USERS')
 
-	#st.plotly_chart(mau_bar)
-	mau_bar.show()
+	st.plotly_chart(mau_bar)
+	#mau_bar.show()
 
 	#inserting DAU data 
 	df = pd.read_excel('dau_anchor.xlsx', sheet_name = 'Sheet 1', usecols = 'A:B',
@@ -44,7 +44,8 @@ with total_users:
 
 	#creates line graph for DAU 
 	dau_fig = px.line(df, title = 'dau title',x = 'DATES', y = 'DAILY_ACTIVE_USERS')
-	dau_fig.show()
+	st.plotly_chart(dau_fig)
+	#dau_fig.show()
 
 
 
